@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="us-ascii">
+	<link rel="stylesheet" type="text/css" href="/vault2/CSS/reset.css">
+	<link rel="stylesheet" type="text/css" href="/vault2/CSS/index.css">
+	<script type="text/javascript" src="/vault2/JS/Team_Lookup.js"></script>
+	<script type="text/javascript" src="/vault2/JS/interactive.js"></script>
+	<title>The Vault</title>
+</head>
+
+
+<body onload="displayHomepage('homePage'); pullHeader();">
+
+	<div id="header">
+		<div id=top>
+			<div id="back" title="Back">&larr;</div>
+			<div id="home" title="Home">Home</div>
+			
+			<form>
+				<select id="year">
+					<option>2013</option>
+					<option>2012</option>
+				</select>
+				<input id="inputBox" placeholder="Search" autocomplete="off" />
+				<input style="display: none;" />
+			</form>
+		</div>
+		<div id="c-p-e-container" style="display: none;">
+			<!--This is also run by AJAX-->
+		</div>
+	</div>
+
+	<div id="body">
+	<!-- This is run by super cool AJAX -->
+	</div>
+</body>
+</html>

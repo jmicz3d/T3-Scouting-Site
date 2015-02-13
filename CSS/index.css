@@ -1,0 +1,208 @@
+html {
+	background-color: #FFFFFF;
+	height: 100%;
+	font-family: sans-serif;
+}
+
+#body {
+	overflow: visible;
+	margin-left: 15px;
+}
+
+/* START search/home upper ribbon */
+#header {
+	position: fixed;
+	z-index: 2;
+	top: 0;
+	min-width: 480px;
+	min-height: 40px;
+	width: 100%;
+	padding-top: 0;
+	background-color: #FFFFFF;
+	border-bottom: 3px solid #CCCCCC;
+	transition: all 0.25s ease-in;
+}
+
+#top {
+	overflow: hidden;
+}
+#year {
+	float: right;
+	height: 40px;
+	width: 60px;
+	border: 1px solid blue;
+	border-left: none;
+	background: none;
+}
+#inputBox {
+	min-width: 250px;
+	max-height: 36px;
+	float: right;
+	vertical-align: middle;
+	border: none;
+	line-height: 160%;
+	font-size: 150%;
+	height: 100%;
+	width: 45%;
+	text-align: left;
+	padding-left: 3px;
+	border: 1px solid blue;
+}
+#inputBox:focus {
+	outline-color: blue;
+}
+
+	::-webkit-input-placeholder {
+		color: #333333;
+		opacity: 1;
+	}
+	::-moz-placeholder {
+		color: #333333;
+		opacity: 1;
+	}
+	input:-moz-placeholder {
+		color: #333333;
+		opacity: 1;
+	}
+
+
+
+#back {
+	cursor: pointer;
+	float: left;
+	width: 15px;
+	height: 40px;
+	margin-left: 10px;
+	font-size: 2em;
+	color: #000000;
+}
+
+#home {
+	cursor: pointer;
+	float: left;
+	width: 100px;
+	height: 40px;
+	margin-left: 20px;
+	margin-top: -3px;
+	font-size: 3em;
+	color: #0000FF;
+}
+
+/* END search/home lower ribbon */
+
+/* a whole lot of styling for these
+ * START placeholder cards */
+
+#c-p-e-continer {
+	top: 0;
+	left: 0;
+	float: right;
+}
+
+.c-list-container {
+	height: 100%;
+	max-height: 65px;
+	width: 200px;
+	float: left;
+	margin: 3px 3px;
+	display: inline-block;
+	background-color: white;
+	border-top: 2px solid #CCCCCC;
+	border-bottom: 2px solid #EEEEEE;
+}
+
+.c-list-table {
+	border-collapse: collapse;
+	cursor: pointer;
+	width: 100%;
+	height: 100%;
+	max-height: 65px;
+}
+
+.c-list-data {
+	border: 1px solid #999999;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 1em;
+	height: 65px;
+	word-wrap: break-word;
+}
+
+/* END of predict cards, START of main card */
+
+#title {
+	position: absolute;
+	top: 75px;
+	left: 5px;
+	font-size: 3em;
+	font-style: italic;
+	color: #FFA500;
+	text-align: center;
+	white-space: nowrap;
+}
+.c-container {
+	position: relative;
+	width: 99%;
+	padding-right: 10px;
+	display: inline-block;
+	padding-bottom: 50px;
+}
+
+.c-event-table, .c-event-head, .c-team-table, .c-team-head, .c-team-subhead, .c-number, .c-team-data, .c-event-team-table {
+	border-collapse: collapse;
+	padding: 5px 5px;
+	border: 1px solid #999999;
+	vertical-align: middle;
+	white-space:nowrap;
+}
+
+.c-team-even {
+	background-color: #FFFFFF;
+}
+.c-team-odd {
+	background-color: #FFFFFF;
+}
+
+.c-event-table, .c-team-table, .c-event-team-table {
+	cursor: pointer;
+	position: relative;
+	display: inline-block;
+	top: 200px;
+	margin: 5px;
+	padding: 0;
+}
+.c-team-table {
+	cursor: default;
+}
+
+.c-team-head {
+	overflow: hidden;
+	text-align: center;
+	font-size: 1.75em;
+}
+
+.c-team-subhead {
+	text-align: center;
+	font-size: 1em;
+	font-style: italic;
+}
+
+.c-number {
+	display: table-cell;
+	text-align: right;
+	font-size: 1em;
+	font-style: italic;
+}
+
+.c-team-data {
+	display: table-cell;
+	text-align: center;
+	font-size: 1em;
+}
+
+.c-event-head {
+	overflow: hidden;
+	text-align: center;
+	font-size: 2em;
+	background: #CCCCCC;
+}
