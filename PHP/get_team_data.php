@@ -1,8 +1,8 @@
 <?php
-
+	require_once("dbcreds.php");
 	// Create connection
-	$con = mysqli_connect ($hostname="localhost", $user="James", $pass="bootsector", $dbase="t3_prototype_2013_14_db");
-
+	$con = mysqli_connect ($host, $user, $pass, $db);
+	
 	// Check connection
 	if (mysqli_connect_errno ($con))  {
 	  echo "Failed to connect to MySQL: " . mysqli_connect_error();
@@ -10,7 +10,7 @@
 	
 	$q = $_GET["q"];
 	
-	$result = mysqli_query ($con, "SELECT * FROM kettering_teams WHERE team_name = '".$q."'");		//This is to get the team number
+	$result = mysqli_query ($con, "SELECT * FROM miket_team_list WHERE team_name = '".$q."'");		//This is to get the team number
 																									//and name.
 
 	while ($row = mysqli_fetch_array($result)) {
@@ -18,7 +18,7 @@
 		$team_name = $row["team_name"];
 	}	
 	
-	$result = mysqli_query($con, "SELECT * FROM match_results WHERE team_number = '".$team_number."'");
+	$result = mysqli_query($con, "SELECT * FROM miket_results_2014 WHERE team_number = '".$team_number."'");
 	
 	$i = 0;
 

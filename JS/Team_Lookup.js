@@ -65,7 +65,7 @@ displayHomepage = function()
 																			//Done setting up
 																			//
 	document.getElementById("inputBox").value = "";
-	xmlhttp.open("GET","/vault2/PHP/home_page.php",true);						//Open socket
+	xmlhttp.open("GET","./PHP/home_page.php",true);						//Open socket
 	xmlhttp.send();	
 
 	showUser(false);
@@ -100,9 +100,9 @@ showUser = function(back)
 		}
 	}
 	if (str === "help") {
-		xmlhttp.open("GET", "/vault2/PHP/help.php");
+		xmlhttp.open("GET", "./PHP/help.php");
 	} else {
-		xmlhttp.open("GET", "/vault2/PHP/data.php?q="+str +"&y="+year, true);					// send the server what is currently in the search box
+		xmlhttp.open("GET", "./PHP/data.php?q=68&y=2014", true);					// send the server what is currently in the search box
 	}
 	xmlhttp.send();
 	document.getElementById("inputBox").blur();								// Clean up and indirectly (event listener to blur) pull header
@@ -140,7 +140,7 @@ showHint = function(str)		//show hints in the dropdown. Takes what is currently 
 		}
 		}
 		
-		xmlhttp.open("GET","/vault2/PHP/list.php?q="+str,true);						//pass the current value of the search box to the server
+		xmlhttp.open("GET","./PHP/list.php?q="+str,true);						//pass the current value of the search box to the server
 		xmlhttp.send();
 }
 

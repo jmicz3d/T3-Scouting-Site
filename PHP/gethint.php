@@ -1,7 +1,7 @@
 <?php
-
+	require_once("dbcreds.php");
 	// Create connection
-	$con=mysqli_connect($hostname="localhost", $user="James", $pass="bootsector", $dbase="t3_prototype_2013_14_db");
+	$con = mysqli_connect ($host, $user, $pass, $db);
 
 	// Check connection
 	if (mysqli_connect_errno($con)){
